@@ -1,0 +1,3 @@
+FROM node:22.14.0-bullseye
+RUN npm install -g pnpm@10.6.2
+ENTRYPOINT ["pnpm", "--package=hello-world-npm", "dlx", "hello-world-npm"]
